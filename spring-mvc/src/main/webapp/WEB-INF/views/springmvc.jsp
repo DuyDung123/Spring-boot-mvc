@@ -9,14 +9,14 @@
 
 <meta charset="UTF-8">
 
-<title>Home Page</title>
+<title>Spring mvc</title>
 
 </head>
 
 <body>
-	<h1>Trang chủ</h1>
+	<h1>khóa học spring mvc</h1>
 	<h1>menu</h1>
-	<%@ include file ="menu.jsp" %>
+	<%@ include file ="menu.jsp" %>>
 </body>
 
 </html>
