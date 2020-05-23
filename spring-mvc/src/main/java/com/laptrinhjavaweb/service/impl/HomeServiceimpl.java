@@ -17,7 +17,7 @@ public class HomeServiceimpl implements HomeService{
 		menus.add("hưỡng dẫn học java web");
 		menus.add("liên hệ");
 		menus.add("thanh toán");
-		return null;
+		return menus;
 	}
 	
 }
