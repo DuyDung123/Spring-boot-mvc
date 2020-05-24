@@ -1,2 +1,2 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<c:redirect url="/trang-chu"/>
+<%@ include file="/common/taglib.jsp" %> <!-- link đến taglib khai báo thư viện  -->
+<c:redirect url="/trang-chu"/> <!-- run thì vào trang chủ đầu tiên  -->

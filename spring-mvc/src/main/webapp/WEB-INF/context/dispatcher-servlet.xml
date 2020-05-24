@@ -37,4 +37,7 @@
 	<mvc:interceptors>
         <bean class="com.laptrinhjavaweb.interceptor.MenuHandleInterceptor"></bean>
     </mvc:interceptors> <!-- khai báo intercepter -->
+    
+    <mvc:resources mapping="/template/**" location="/template/" />
+     <!-- khai báo template là tiền tố truy xuất vào đầu tiên nếu không khai báo thì tất cả các link file css js sẽ lỗi -->
 </beans>
