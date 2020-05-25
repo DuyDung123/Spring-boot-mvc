@@ -2,12 +2,12 @@
 <decorators defaultdir="/decorators">
 
 	<!-- upline dao diện web -->
-    <decorator name="trang-chu" page="web.jsp">
-       <pattern>/trang-chu</pattern> <!-- khi mà resquest vào url /trang chu thì trỏ tới web.jsp  ở forder /decorators-->
+    <decorator name="web" page="web.jsp">
+       <pattern>/*</pattern> <!-- khi mà resquest vào url /trang chu thì trỏ tới web.jsp  ở forder /decorators-->
     </decorator>
     
-    <decorator name="home" page="admin.jsp">
-       <pattern>/home</pattern> <!--  tương tự như trang chủ -->
+    <decorator name="admin" page="admin.jsp">
+       <pattern>/quan-tri*</pattern> <!--  tương tự như trang chủ -->
     </decorator>
 <!-- nhớ khai báo taglib.jsp ở forder common nó là thư viện chung cho decorators -->
 </decorators>
