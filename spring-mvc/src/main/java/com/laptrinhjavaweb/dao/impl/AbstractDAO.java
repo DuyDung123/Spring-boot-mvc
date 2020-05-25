@@ -46,16 +46,16 @@ public class AbstractDAO<T> implements GenericDAO<T>{
 		ResultSet resultSet = null;
 		try {
 			connection = getConnection();
-			statement = connection.prepareStatement(sql); //chá»— nÃ y má»›i chuyá»�n cÃ¢u query vÃ o thÃ´i
-			setParameter(statement, parameters); // chá»— nÃ y chuyá»�n tham sá»‘ vÃ o cho cÃ¢u query
-			resultSet = statement.executeQuery(); //chá»— nÃ y nÃ³ má»›i cháº¡y query nÃ¨ sau Ä‘Ã³ nÃ³ cháº¡y tráº£ vá»� cho ta má»™t báº£ng dÃ¹ng loop Ä‘á»ƒ láº¥y dl bang Ä‘Ã³
+			statement = connection.prepareStatement(sql); 
+			setParameter(statement, parameters); 
+			resultSet = statement.executeQuery();
 			while (resultSet.next()) {
 				resutls.add(rowMapper.mapRow(resultSet));
 			}
 			return resutls;
 		} catch (SQLException e) {
 			return null;
-		}finally { //dÃ¹ try cÃ³ Ä‘ang chay hay tháº¿ nÃ o Ä‘i ná»¯a thÃ¬ cháº¡y song rá»“i cÃ¡i finally nÃ y má»›i Ä‘Æ°á»£c nháº£y vÃ o cuá»‘i cÃ¹ng
+		}finally { 
 			try {
 				if (connection != null) {
 					connection.close();
@@ -92,10 +92,6 @@ public class AbstractDAO<T> implements GenericDAO<T>{
 		}
 	}
 	
-/*	else if(parameter == null) {
-		statement.setNull(index, Types.NULL); // chá»— nÃ o bá»� trá»‘ng nÃ³ sáº½ cho lÃ  null
-	}
-*/
 	@Override
 	public void update(String sql, Object... parameters) {
 		Connection connection = null;
