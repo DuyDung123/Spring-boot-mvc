@@ -2,11 +2,14 @@ package com.laptrinhjavaweb.dao.impl;
 
 import java.util.List;
 
+import org.springframework.stereotype.Repository;
+
 import com.laptrinhjavaweb.dao.ICategoryDAO;
 import com.laptrinhjavaweb.mapper.CategoryMapper;
 import com.laptrinhjavaweb.model.CategoryModel;
 import com.laptrinhjavaweb.paging.Pageble;
 
+@Repository
 public class CategoryDAO extends AbstractDAO<CategoryModel> implements ICategoryDAO {
 	
 	@Override

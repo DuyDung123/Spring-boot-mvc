@@ -3,17 +3,19 @@ package com.laptrinhjavaweb.service.impl;
 import java.sql.Timestamp;
 import java.util.List;
 
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.laptrinhjavaweb.dao.ICategoryDAO;
 import com.laptrinhjavaweb.model.CategoryModel;
 import com.laptrinhjavaweb.paging.Pageble;
 import com.laptrinhjavaweb.service.ICategoryService;
 
+@Service
 public class CategoryService implements ICategoryService{
 	
-	@Inject
-	private ICategoryDAO CategoryDao; //nhớ add servlet.weld ở file pom.xml và tao file beans.xml ở WEB-INF
+	@Autowired
+	private ICategoryDAO CategoryDao;
 	
 	@Override
 	public List<CategoryModel> findAll() {
