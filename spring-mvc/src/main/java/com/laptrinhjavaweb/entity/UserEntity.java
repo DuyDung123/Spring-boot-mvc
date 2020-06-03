@@ -12,13 +12,13 @@ import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table
+@Table(name = "user")
 public class UserEntity {
 
 	@Column(name = "username")
 	private String userName;
 
-	@Column
+	@Column(name = "password")
 	private String password;
 
 	@Column(name = "fullname")
@@ -72,5 +72,4 @@ public class UserEntity {
 		this.roles = roles;
 	}
 	
-
 }
