@@ -15,16 +15,13 @@
 				<c:if test="${not empty message}">
 					<div class="alert alert-${alert}">${message}</div>
 				</c:if>
-				<form action="<c:url value='/dang-nhap'/>" id="formLogin"
-					method="post">
+				<form action="/j_spring_security_check" id="formLogin" method="post">
 					<div class="form-group">
-						<input type="text" class="form-control" id="userName"
-							name="userName" placeholder="Tên đăng nhập">
+						<input type="text" class="form-control" id="userName" name="j_userName" placeholder="Tên đăng nhập">
 					</div>
 
 					<div class="form-group">
-						<input type="password" class="form-control" id="password"
-							name="password" placeholder="Mật khẩu">
+						<input type="password" class="form-control" id="password" name="j_password" placeholder="Mật khẩu">
 					</div>
 					<button type="submit" class="btn btn-primary">Đăng nhập</button>
 				</form>

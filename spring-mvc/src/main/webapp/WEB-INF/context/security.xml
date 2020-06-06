@@ -21,6 +21,15 @@
 			invalid-session-url="/dang-nhap?sessionTimeout" />
 		<logout delete-cookies="JSESSIONID" />
 	</http>
-
-
+	
+	<!-- xu ly ma hoa md5 -->
+	<authentication-manager >
+        <authentication-provider user-service-ref="customUserDetailsService">
+        		<password-encoder ref="bcryptEncoder"/>
+        </authentication-provider>
+    </authentication-manager> 
+    
+    <beans:bean id="bcryptEncoder" class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder" />
+    <beans:bean id="customUserDetailsService" class="com.laptrinhjavaweb.service.impl.CustomUserDetailsService" />
+    <beans:bean id="customSuccessHandler" class="com.laptrinhjavaweb.security.CustomSuccessHandler" />
 </beans:beans>
