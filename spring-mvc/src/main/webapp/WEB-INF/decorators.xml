@@ -9,5 +9,9 @@
     <decorator name="admin" page="admin.jsp">
        <pattern>/quan-tri*</pattern> <!--  tương tự như trang chủ -->
     </decorator>
+    
+    <decorator name="login" page="login.jsp">
+        <pattern>/dang-nhap</pattern>
+    </decorator>
 <!-- nhớ khai báo taglib.jsp ở forder common nó là thư viện chung cho decorators -->
 </decorators>
