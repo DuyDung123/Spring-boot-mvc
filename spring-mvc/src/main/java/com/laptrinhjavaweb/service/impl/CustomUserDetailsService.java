@@ -35,6 +35,6 @@ public class CustomUserDetailsService implements UserDetailsService {
 		//sau khi authen song thì sẽ push thông tin vào security để duy trì thông tin đó khi user login vào hệ thống
 		User user = new User(userEntity.getUserName(), userEntity.getPassword(), true, true, true, true, authorities);
 		return null;
-	}
+	} 
 	
 }
