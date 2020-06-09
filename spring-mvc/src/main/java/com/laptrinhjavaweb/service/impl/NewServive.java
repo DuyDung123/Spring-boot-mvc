@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.laptrinhjavaweb.dao.ICategoryDAO;
 import com.laptrinhjavaweb.dao.INewDAO;
+import com.laptrinhjavaweb.dto.NewDTO;
 import com.laptrinhjavaweb.model.NewModel;
 import com.laptrinhjavaweb.service.INewService;
 
@@ -20,7 +21,7 @@ public class NewServive implements INewService{
 //	private ICategoryDAO categoryDao;
 
 	@Override
-	public List<NewModel> findAll( ) {
+	public List<NewModel> findAll() {
 		return newDao.finldAll();
 	}
 }

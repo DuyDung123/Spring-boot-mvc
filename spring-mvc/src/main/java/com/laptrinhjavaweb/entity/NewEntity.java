@@ -20,7 +20,6 @@ public class NewEntity extends BaseEntity {
 	@Column(name = "content", columnDefinition = "TEXT")
 	private String content;
 
-
 	public String getTitle() {
 		return title;
 	}
