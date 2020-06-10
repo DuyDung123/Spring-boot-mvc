@@ -3,5 +3,7 @@
     <persistence-unit name="persistence-data">
         <class>com.laptrinhjavaweb.entity.NewEntity</class>
         <class>com.laptrinhjavaweb.entity.RoleEntity</class>
+        <class>com.laptrinhjavaweb.entity.UserEntity</class>
+        <class>com.laptrinhjavaweb.entity.CategoryEntity</class>
     </persistence-unit>
 </persistence>
