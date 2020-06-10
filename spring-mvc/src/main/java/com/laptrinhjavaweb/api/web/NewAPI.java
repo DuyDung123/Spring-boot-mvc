@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.laptrinhjavaweb.model.NewModel;
 import com.laptrinhjavaweb.service.INewService;
 
-@RestController(value = "newAPIOfAdmin")
+@RestController(value = "newAPIOfWeb")
 public class NewAPI {
 
 	@Autowired

@@ -56,9 +56,9 @@ public class JPAConfig {
 	
 	Properties additionalProperties() {
 		Properties properties = new Properties();
-		properties.setProperty("hibernate.hbm2ddl.auto", "create-drop");
+		//properties.setProperty("hibernate.hbm2ddl.auto", "update");
 		//properties.setProperty("hibernate.hbm2ddl.auto", "create");
-		//properties.setProperty("hibernate.hbm2ddl.auto", "none");
+		properties.setProperty("hibernate.hbm2ddl.auto", "none");
 		properties.setProperty("hibernate.enable_lazy_load_no_trans", "true"); // bât tính năng sử dụng lazy ở chỗ userentity
 		return properties;
 	}
