@@ -18,15 +18,18 @@ public class NewAPI {
 	
 	@PostMapping(value = "/api/new")
 	public NewDTO createNew(@RequestBody NewDTO newDTO) {
+		System.out.println(newDTO.getCategoryCode());
 		return newDTO;
 	}
 	
 	@PutMapping(value = "/api/new")
 	public NewDTO updateNew(@RequestBody NewDTO newDTO) {
+		System.out.println(newDTO.getCategoryCode());
 		return newDTO;
 	}
 	
 	@DeleteMapping(value = "/api/new")
 	public void deleteNew(@RequestBody long[] ids) {
+		System.out.println(ids);
 	}
 }
